@@ -1,4 +1,4 @@
-def max_in_row_min_in_col(matrix):
+def max_row_min_col(matrix):
     # Create empty sets to store the maximum in row and minimum in column, respectively
     max_in_row = set()
     min_in_col = set()
@@ -19,8 +19,8 @@ def max_in_row_min_in_col(matrix):
 # Tests
 # Test case 1
 matrix = [[5, 16, 20], [9, 11, 18], [15, 16, 17]]
-assert max_in_row_min_in_col(matrix) == {17}
+assert max_row_min_col(matrix) == {17}
 
 # Test case 2
 matrix = [[100, 60, 20, 50], [70, 80, 10, 90], [10, 50, 44, 30]]
-assert max_in_row_min_in_col(matrix) == {50}
+assert max_row_min_col(matrix) == {50}
