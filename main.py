@@ -16,6 +16,13 @@ def max_row_min_col(matrix):
     # Return the intersection of the two sets, which contains only the elements that are in both sets
     return max_in_row.intersection(min_in_col)  # O(min(m,n)) time, O(min(m,n)) space
 
+# The function's time complexity is O(m*n) since it involves traversing through all the elements of the matrix twice. 
+# Firstly, the maximum value in each row must be found and secondly, the minimum value in each column.
+
+# The space complexity of the function is O(min(m, n)) since two sets are employed to store the maximum values of each row and 
+# the minimum values of each column. 
+# The size of each set is bounded by the smaller of the number of rows and the number of columns of the matrix.
+
 # Tests
 # Test case 1
 matrix = [[5, 16, 20], [9, 11, 18], [15, 16, 17]]
